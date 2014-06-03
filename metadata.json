@@ -1,0 +1,32 @@
+{
+  "name": "jriviere-windows_isos",
+  "version": "0.0.1",
+  "source": "https://github.com/ninja-2/windows_isos",
+  "author": "jriviere",
+  "license": "Apache License, Version 2.0",
+  "summary": "This module allows you to mount and dismount ISOs on windows server.",
+  "description": "This module allows you to mount and dismount ISOs on windows server. Should work on Windows 8.1, Windows Server 2012 R2",
+  "project_page": "https://github.com/ninja-2/windows_isos",
+  "dependencies": [
+    {
+      "name": "joshcooper/powershell",
+      "version_requirement": ">=0.0.6"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.2.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "bfe25a9831bb51f8f1a632a82e597fa8",
+    "README.md": "ac45dce9762c06644f78c29449e601ca",
+    "manifests/init.pp": "80ebde859fbcb933b5b3f2db0d40558e",
+    "spec/spec_helper.rb": "09ccbe4bbe4503df6281e6ec7977973d",
+    "templates/getdriveletter.erb": "dec4ddf52391b0707ce268aef46610b1",
+    "templates/xml.erb": "d11555ee8eb81d0a49c276d52b5da9f2",
+    "tests/init.pp": "0773f15526968f9459de1dbbdc93a9ad"
+  }
+}

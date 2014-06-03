@@ -1,0 +1,18 @@
+<%=
+require 'rexml/document'
+
+if (File.size?(@xmlpath) != nil)
+  file = File.new(@xmlpath)
+  doc = REXML::Document.new file
+  root = doc.root
+  isos = root.elements["isos"]
+
+  isos.elements.map do | iso |
+    imagepath = iso.attributes['ImagePath']
+    if (imagepath == @isopath)
+      driveletter = iso.attributes['DriveLetter']
+      return driveletter  
+    end
+  end
+end
+%>

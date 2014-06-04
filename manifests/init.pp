@@ -33,14 +33,15 @@ define windows_isos (
   $xmlpath = 'C:\\isos.xml',
 
 ) {
-  file{"$xmlpath":
-    content => template('windows_isos/xml.erb'),
-    replace => no,
+  if (!defined(File[$xmlpath])){
+    file{"$xmlpath":
+      content => template('windows_isos/xml.erb'),
+      replace => no,
+    }
   }
-
   validate_re($ensure, '^(present|absent)$', 'valid values for mount are \'present\' or \'absent\'')
 
-  if(!empty($isopath)){
+  if(!empty($isopath) and file_exists("$isopath")){
     if ($ensure == 'present'){
      exec{"Mount ${name}":
         provider => powershell,
@@ -64,6 +65,8 @@ define windows_isos (
         onlyif      => "[xml]\$xml = New-Object system.Xml.XmlDocument;[xml]\$xml = Get-Content '${xmlpath}';\$exist=\$false;foreach(\$iso in \$xml.configuration.isos.iso){if(\$iso.ImagePath -eq '${isopath}'){\$exist=\$true}}if(\$exist -eq \$False){exit 1}",
       }
     }
+  }else{
+    warning("The path : '$isopath', for isopath parameter doesn\'t exist or is empty.")
   }
 
 

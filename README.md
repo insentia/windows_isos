@@ -11,10 +11,10 @@ This module use PowerShell v4.0 commands and should work on Windows 8/8.1, Windo
 Tested on windows server 2012 R2
 
 ##Last Fix/Update
-V 0.0.1 :
- - Create module
- - Mount/Umount ISO by path
- - Save mounting ISO information in XML file. Better for ulterior use
+V 0.0.2 :
+ - Fix Duplicate Declaration error when mounting many isos
+ - Add verification if file exists before executing the resource
+ - Add warning if file doesn't exist
 
 ###Setup Requirements
 Depends on the following modules:

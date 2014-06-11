@@ -1,8 +1,8 @@
 <%=
 require 'rexml/document'
 
-if (File.size?(@xmlpath) != nil)
-  file = File.new(@xmlpath)
+if (File.size?(#{isopath}) != nil)
+  file = File.new(#{isopath})
   doc = REXML::Document.new file
   root = doc.root
   isos = root.elements["isos"]

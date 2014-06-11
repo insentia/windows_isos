@@ -10,11 +10,12 @@ This module use PowerShell v4.0 commands and should work on Windows 8/8.1, Windo
 
 Tested on windows server 2012 R2
 
+If the ISO file don't exist, no error will be shown.
+
 ##Last Fix/Update
-V 0.0.2 :
- - Fix Duplicate Declaration error when mounting many isos
- - Add verification if file exists before executing the resource
- - Add warning if file doesn't exist
+V 0.0.3 :
+ - Remove use of file_exists function because this will not work when you use it with a puppet master...
+ - Now the xml is modified if something change (DriveLetter or SystemFileLabel)
 
 ###Setup Requirements
 Depends on the following modules:

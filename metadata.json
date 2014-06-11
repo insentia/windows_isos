@@ -1,6 +1,6 @@
 {
   "name": "jriviere-windows_isos",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "source": "https://github.com/ninja-2/windows_isos",
   "author": "jriviere",
   "license": "Apache License, Version 2.0",
@@ -20,14 +20,28 @@
   "types": [
 
   ],
+  "operatingsystem_support": [
+     { "operatingsystem": "Windows",
+       "operatingsystemrelease": [
+         "Server 2012",
+         "Server 2012 R2"
+      ]
+     }
+  ],
   "checksums": {
-    "Modulefile": "be12d74e23e58a62e51cdfa0c02eaec8",
-    "README.md": "326f30893097889f5c6ad32cf2f7eae2",
+    "Modulefile": "90ebb6e3affef7722076cf1217ac2cef",
+    "README.md": "4ab6d9c88bd069d49d16041a71319234",
     "lib/puppet/parser/functions/file_exists.rb": "3572c5af1f75ae840e6ed39f52d3eba6",
-    "manifests/init.pp": "beb18e7278dee04853f9cfc8071ccd7d",
+    "lib/puppet/parser/functions/get_drive_label.rb": "3572c5af1f75ae840e6ed39f52d3eba6",
+    "lib/puppet/parser/functions/get_drive_letter.rb": "c5b8da76ccc95a00a75a8a6f7c465826",
+    "manifests/init.pp": "3579c7ade05dd78d4c02e85ded450038",
     "spec/functions/file_exists_spec.rb": "43bbf910266ac6cd0fa0e82f36dc6eae",
+    "spec/functions/get_drive_label.rb": "be093e0d88c3f8826a641fd308472b39",
+    "spec/functions/get_drive_label_specs.rb": "444430373a3ba183b4a5cb1f59cd4180",
+    "spec/functions/get_drive_letter.rb": "e6dfa1ac072bb5bccecd9a7ab44d75c9",
+    "spec/functions/get_drive_letter_specs.rb": "e6dfa1ac072bb5bccecd9a7ab44d75c9",
     "spec/spec_helper.rb": "09ccbe4bbe4503df6281e6ec7977973d",
-    "templates/getdriveletter.erb": "dec4ddf52391b0707ce268aef46610b1",
+    "templates/getdriveletter.erb": "6090d97806b0d47840658ad92f9c216e",
     "templates/xml.erb": "d11555ee8eb81d0a49c276d52b5da9f2",
     "tests/init.pp": "0773f15526968f9459de1dbbdc93a9ad"
   }

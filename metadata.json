@@ -1,34 +1,26 @@
 {
   "name": "jriviere-windows_isos",
-  "version": "0.0.3",
-  "source": "https://github.com/ninja-2/windows_isos",
+  "version": "0.0.4",
   "author": "jriviere",
-  "license": "Apache License, Version 2.0",
   "summary": "This module allows you to mount and dismount ISOs on windows server.",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/insentia/windows_isos",
+  "project_page": "https://github.com/insentia/windows_isos",
+  "issues_url": "https://github.com/insentia/windows_isos/issues",
   "description": "This module allows you to mount and dismount ISOs on windows server. Should work on Windows 8.1, Windows Server 2012 R2",
-  "project_page": "https://github.com/ninja-2/windows_isos",
-  "dependencies": [
-    {
-      "name": "puppetlabs/powershell",
-      "version_requirement": ">=1.0.2"
-    },
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.2.1"
-    }
-  ],
   "types": [
-
+  
   ],
   "operatingsystem_support": [
-     { "operatingsystem": "Windows",
-       "operatingsystemrelease": [
-         "Server 2012",
-         "Server 2012 R2",
-         "8",
-         "8.1"
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2012",
+        "Server 2012 R2",
+        "8",
+        "8.1"
       ]
-     }
+    }
   ],
   "checksums": {
     "Modulefile": "90ebb6e3affef7722076cf1217ac2cef",
@@ -46,5 +38,15 @@
     "templates/getdriveletter.erb": "6090d97806b0d47840658ad92f9c216e",
     "templates/xml.erb": "d11555ee8eb81d0a49c276d52b5da9f2",
     "tests/init.pp": "0773f15526968f9459de1dbbdc93a9ad"
-  }
+  },
+  "dependencies": [
+    {
+      "name": "puppetlabs/powershell",
+      "version_requirement": ">=1.0.2"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.2.1"
+    }
+  ]
 }

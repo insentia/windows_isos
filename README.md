@@ -13,13 +13,13 @@ Tested on windows server 2012 R2
 If the ISO file don't exist, no error will be shown.
 
 ##Last Fix/Update
-V 0.0.3 :
- - Remove use of file_exists function because this will not work when you use it with a puppet master...
+V 0.0.4 :
+ - Change powershell module to puppetlabs/powershell
  - Now the xml is modified if something change (DriveLetter or SystemFileLabel)
 
 ###Setup Requirements
 Depends on the following modules:
-['joshcooper/powershell', '>=0.0.6'](https://forge.puppetlabs.com/joshcooper/powershell),
+['puppetlabs/powershell', '>=1.0.2'](https://forge.puppetlabs.com/puppetlabs/powershell),
 ['puppetlabs/stdlib', '>= 4.2.1'](https://forge.puppetlabs.com/puppetlabs/stdlib)
 
 ##Usage
@@ -50,4 +50,4 @@ Jerome RIVIERE
 Support
 -------
 
-Please log tickets and issues at [GitHub site](https://github.com/ninja-2/windows_isos/issues)
+Please log tickets and issues at [GitHub site](https://github.com/insentia/windows_isos/issues)

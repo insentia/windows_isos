@@ -1,0 +1,17 @@
+{
+  "README.md": "3f5f427bbf500830fdc497f687955088",
+  "lib/puppet/parser/functions/file_exists.rb": "3572c5af1f75ae840e6ed39f52d3eba6",
+  "lib/puppet/parser/functions/get_drive_label.rb": "3572c5af1f75ae840e6ed39f52d3eba6",
+  "lib/puppet/parser/functions/get_drive_letter.rb": "c5b8da76ccc95a00a75a8a6f7c465826",
+  "manifests/init.pp": "3579c7ade05dd78d4c02e85ded450038",
+  "metadata.json": "727bd6cc68a2c6c52e8f2f9e6c68fae2",
+  "spec/functions/file_exists_spec.rb": "43bbf910266ac6cd0fa0e82f36dc6eae",
+  "spec/functions/get_drive_label.rb": "be093e0d88c3f8826a641fd308472b39",
+  "spec/functions/get_drive_label_specs.rb": "444430373a3ba183b4a5cb1f59cd4180",
+  "spec/functions/get_drive_letter.rb": "e6dfa1ac072bb5bccecd9a7ab44d75c9",
+  "spec/functions/get_drive_letter_specs.rb": "e6dfa1ac072bb5bccecd9a7ab44d75c9",
+  "spec/spec_helper.rb": "09ccbe4bbe4503df6281e6ec7977973d",
+  "templates/getdriveletter.erb": "6090d97806b0d47840658ad92f9c216e",
+  "templates/xml.erb": "d11555ee8eb81d0a49c276d52b5da9f2",
+  "tests/init.pp": "0773f15526968f9459de1dbbdc93a9ad"
+}
